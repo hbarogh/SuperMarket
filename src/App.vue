@@ -20,9 +20,6 @@ const filteredItems = computed(() => {
 
 <template>
   <navBar @category-selected="(category) => selectedCategory = category"/>
-  <!-- <div class="addItemSection">
-    <AddItemButton />
-  </div> -->
   <router-view :selectedCategory="selectedCategory" />
 
   
